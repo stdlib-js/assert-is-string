@@ -613,8 +613,7 @@ jobs:
             sed -E "s/'//g" | \
             sort)
           if [ -n "$exports" ]; then
-            echo -e "You may import the following named exports from the package:\n\n\`\`\`javascript\n$(echo $imports )\n\`\`\`"
-            find ./esm -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\`\`\`javascript\nimport\s+([a-zA-Z0-9_]+)\s+from\s*'([^']+)';\n\`\`\`/\`\`\`javascript\nimport \1 from '\2';\n\`\`\`\n\nYou may import the following named exports from the package:\n\n\`\`\`javascript\nimport { $(echo $exports) | sed -E 's/ /, /g') } from '\2';\n\`\`\`/"
+            find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\`\`\`javascript\nimport\s+([a-zA-Z0-9_]+)\s+from\s*'([^']+)';\n\`\`\`/\`\`\`javascript\nimport \1 from '\2';\n\`\`\`\n\nYou may import the following named exports from the package:\n\n\`\`\`javascript\nimport { } from '\2';\n\`\`\`/"
           fi
 
           # Remove `installation`, `cli`, and `c` sections:
