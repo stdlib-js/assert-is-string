@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-string",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Test if a value is a string.",
   "license": "Apache-2.0",
   "author": {
@@ -37,9 +37,9 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-has-tostringtag-support": "^0.1.1",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.1",
-    "@stdlib/utils-native-class": "^0.1.1"
+    "@stdlib/assert-has-tostringtag-support": "^0.2.0",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.0",
+    "@stdlib/utils-native-class": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/assert-has-symbol-support": "^0.1.1",
