@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-string/tags). For example,
+
+```javascript
 import isString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@v0.2.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@v0.2.0-deno/mod.js';
+import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@deno/mod.js';
 ```
 
 #### isString( value )
@@ -106,7 +111,7 @@ bool = isString.isObject( new String( 'boop' ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@v0.2.0-deno/mod.js';
+import isString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@deno/mod.js';
 
 var bool = isString( 'beep' );
 // returns true
