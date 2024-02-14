@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@deno/mod.js';
+import isString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@v0.2.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@deno/mod.js';
+import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@v0.2.0-deno/mod.js';
 ```
 
 #### isString( value )
@@ -106,7 +106,7 @@ bool = isString.isObject( new String( 'boop' ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@deno/mod.js';
+import isString from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@v0.2.0-deno/mod.js';
 
 var bool = isString( 'beep' );
 // returns true
