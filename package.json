@@ -39,7 +39,8 @@
   "dependencies": {
     "@stdlib/assert-has-tostringtag-support": "^0.2.1",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1",
-    "@stdlib/utils-native-class": "^0.2.1"
+    "@stdlib/utils-native-class": "^0.2.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
   },
   "devDependencies": {
     "@stdlib/assert-has-symbol-support": "^0.2.1",
